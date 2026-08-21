@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#CDD6C0">
+    <title>Fitness & Food Journey</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            beige: '#CDD6C0',
+                            cream: '#CEDAC0',
+                            sage: '#FBF5EF',
+                            text: '#5C5C5C',
+                            mintgreen: '#FBF5EF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .clean-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-brand-beige text-brand-text min-h-screen flex items-center justify-center p-4 relative selection:bg-brand-sage/30">
+
+    <!-- Dezenter Hintergrund-Akzent -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-cream rounded-full opacity-60 pointer-events-none"></div>
+
+    <!-- Hauptcontainer -->
+    <div class="w-full max-w-lg z-10 space-y-8">
+
+        <!-- Profil-Sektion -->
+        <div class="text-center space-y-4">
+            <div class="relative inline-block">
+                <div class="w-32 h-32 rounded-full ring-2 ring-brand-sage/50 p-1 mx-auto bg-white clean-shadow">
+                    <img src="Linktree_Image.png" 
+                         alt="Fitness & Food Bloggerin" 
+                         class="w-full h-full rounded-full object-cover">
+                </div>
+            </div>
+            <div class="space-y-1">
+                <h1 class="text-2xl font-bold text-brand-text tracking-tight">My Fav’s 🫶🏼</h1>
+                <p class="text-sm text-gray-500 max-w-sm mx-auto font-light">Vegan food • Fitness • Lifestyle • Fashion 🌱</p>
+            </div>
+        </div>
+
+        <!-- Link-Liste -->
+        <div class="space-y-4">
+
+            <!-- Link 1 Nutri+ 
+            <a href="https://www.nutri-plus.de/" target="_blank" 
+               class="group block w-full p-5 rounded-2xl bg-white clean-shadow border border-gray-100 hover:-translate-y-1 transition-transform duration-300 hover:border-brand-sage/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <span class="w-12 h-12 rounded-xl bg-brand-beige flex items-center justify-center overflow-hidden">
+                            <img src="nutriplus-logo.png" alt="Nutri+ Logo" class="w-full h-full object-cover">
+                        </span>
+                        <div>
+                            <span class="font-semibold text-brand-text block">Nutri+ 🌱</span>
+                            <span class="text-xs text-gray-400 font-light">Creatorcode: Nathaly10</span>
+                        </div>
+                    </div>
+                    <span class="text-brand-sage/50 group-hover:text-brand-sage transition-colors"><i class="fas fa-chevron-right text-sm"></i></span>
+                </div>
+            </a> -->
+
+            <!-- Link 2 Brekky -->
+            <a href="https://serv.linkster.co/r/g2xxBu3n1X" target="_blank" 
+               class="group block w-full p-5 rounded-2xl bg-white clean-shadow border border-gray-100 hover:-translate-y-1 transition-transform duration-300 hover:border-brand-sage/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <span class="w-12 h-12 rounded-xl bg-brand-beige flex items-center justify-center overflow-hidden">
+                            <img src="brekky-logo.png" alt="Brekky Logo" class="w-full h-full object-contain">
+                        </span>
+                        <div>
+                            <span class="font-semibold text-brand-text block">Brekky 🥥</span>
+                            <span class="text-xs text-gray-400 font-light">Creatorcode: nathalybrekky10</span>
+                        </div>
+                    </div>
+                    <span class="text-brand-sage/50 group-hover:text-brand-sage transition-colors"><i class="fas fa-chevron-right text-sm"></i></span>
+                </div>
+            </a>
+
+
+
+            <!-- Link 3 Instagram -->
+            <a href="https://www.instagram.com/nathaly.zhn" target="_blank" 
+               class="group block w-full p-5 rounded-2xl bg-white clean-shadow border border-gray-100 hover:-translate-y-1 transition-transform duration-300 hover:border-brand-sage/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <span class="w-12 h-12 rounded-xl bg-brand-beige flex items-center justify-center text-gray-600 text-lg">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <div>
+                            <span class="font-semibold text-brand-text block">Tägliche Motivation ☀️</span>
+                            <span class="text-xs text-gray-400 font-light">Folg mir auf Insta</span>
+                        </div>
+                    </div>
+                    <span class="text-brand-sage/50 group-hover:text-brand-sage transition-colors"><i class="fas fa-chevron-right text-sm"></i></span>
+                </div>
+            </a>
+
+            <!-- Link 4 Vinted -->
+            <a href="https://www.vinted.de/member/62462664-nathalyzhn" target="_blank" 
+               class="group block w-full p-5 rounded-2xl bg-white clean-shadow border border-gray-100 hover:-translate-y-1 transition-transform duration-300 hover:border-brand-sage/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <span class="w-12 h-12 rounded-xl bg-brand-beige flex items-center justify-center overflow-hidden">
+                            <img src="vinted-logo.png" alt="Vinted Logo" class="w-full h-full object-contain">
+                        </span>
+                        <div>
+                            <span class="font-semibold text-brand-text block">Vinted 👗</span>
+                            <span class="text-xs text-gray-400 font-light"></span>
+                        </div>
+                    </div>
+                    <span class="text-brand-sage/50 group-hover:text-brand-sage transition-colors"><i class="fas fa-chevron-right text-sm"></i></span>
+                </div>
+            </a>
+            
+
+
+        </div>
+
+        <!-- Social Icons Footer -->
+        <div class="flex justify-center gap-6 pt-2 text-gray-400">
+            <a href="https://www.tiktok.com/@nathaly.zhn?is_from_webapp=1&sender_device=pc" class="hover:text-brand-sage transition-colors text-xl" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/nathaly.zhn?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" class="hover:text-brand-sage transition-colors text-xl" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:zahnbauernathaly@gmail.com" class="hover:text-brand-sage transition-colors text-xl" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <!-- Footer mit Impressum-Trigger -->
+        <footer class="text-center text-xs text-gray-400 font-light pt-4 pb-2 space-y-2">
+            <div>
+                <button onclick="toggleImpressum(true)" class="hover:text-brand-text underline transition-colors">
+                    Impressum
+                </button>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Impressum Modal (Standardmäßig versteckt) -->
+    <div id="impressum-modal" class="fixed inset-0 bg-black/30 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md p-6 rounded-3xl clean-shadow relative max-h-[85vh] overflow-y-auto space-y-4">
+            <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                <h2 class="font-bold text-lg text-brand-text">Impressum</h2>
+                <button onclick="toggleImpressum(false)" class="w-8 h-8 rounded-full bg-brand-beige flex items-center justify-center text-gray-500 hover:text-brand-text">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="text-xs text-gray-500 space-y-3 font-light leading-relaxed">
+                <div>
+                    <strong class="text-brand-text block">Angaben gemäß § 5 TMG:</strong>
+                    Nathaly Zehnbauer<!--<br>
+                    Röntgenstraße 6<br>
+                    68623 Lampertheim-->
+                </div>
+                <div>
+                    <strong class="text-brand-text block">Kontakt:</strong>
+                    E-Mail: zahnbauernathaly@gmail.com
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript für das Modal -->
+    <script>
+        function toggleImpressum(show) {
+            const modal = document.getElementById('impressum-modal');
+            if (show) {
+                modal.classList.remove('hidden');
+            } else {
+                modal.classList.add('hidden');
+            }
+        }
+        
+        // Modal schließen, wenn man außerhalb klickt
+        window.onclick = function(event) {
+            const modal = document.getElementById('impressum-modal');
+            if (event.target == modal) {
+                toggleImpressum(false);
+            }
+        }
+    </script>
+
+</body>
+</html>
